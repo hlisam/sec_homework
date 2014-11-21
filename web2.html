@@ -1,0 +1,404 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>mail</title>
+			<style>
+				*{
+					padding: 0px;
+					margin: 0px;
+				}
+				#Content
+				{
+					margin: auto;
+					width: 69%;
+
+				}
+				#header
+				{
+					width: 100%;
+					height: 66px;
+					border: 1px  soild black;
+					background-color: #666699;
+				}
+				#Left
+				{
+					width: 187px;
+					height: 88%;
+					border: 1px solid gray;
+					border-bottom: none;
+					background-color: #CCCCFF;
+					float:left;
+					margin-left:12px;
+				}
+				#Right
+				{
+					width: 239px;
+					float:right;
+				}
+				h1{
+					font-size: 3.65em;
+					color:#FFFFFF;
+					padding-left: 10px;
+					display: inline;
+				}
+				h4{
+					font-size: 1.5em;
+					color: #FFFFFF;
+					display: inline;
+					position: absolute;
+					top: 14px;
+				}
+				h6{
+					font-size: 1em;
+					color: #FFFFFF;
+					display: inline;
+
+				}
+				h5{
+					padding-left: 10px;
+					font-size: 1.2em;
+					color: #FFFFFF;
+					display: inline;
+				}
+				ul.none{
+					padding-left: 20px;
+					list-style-type: none;
+					display: inline;
+				}
+				#header li{
+					color: #FFFFFF;
+					display: inline;
+					font-size: 90%
+				}
+				ul.rnone{
+					list-style-type: none;
+					display: inline;
+					padding-top:7px; 
+					padding-right: 10px;
+					float: right;
+				}
+				#guide{
+					position: absolute;
+					border: 5px solid;
+					border-color: #CC6633;
+					display: inline;
+					height: 25px;
+					width: 286px;
+					top: 1cm;
+					right:5px;
+				}
+				#fm{display:inline;}
+				#left1
+				{
+					height: 107px;
+					width: 179px;
+					padding-top: 6px;
+					margin-left: 2px;
+					list-style-type: none;
+					border-bottom: 2px solid white;
+				}
+				.left2
+				{
+					padding-top: 6px;
+					margin:0 5px 1px 5px;
+					list-style-type: none;
+					border-bottom: 1px solid gray;
+				}
+				.left2 li{
+					margin: 0 5px 1px 5px;
+					font-size: 12px;
+					line-height: 22px;
+				}
+
+				#left1 li{
+					height: 22px;
+					width: 158px;
+					margin: 6px 10px 0 11px;
+					line-height: 28px;
+					font-size: 14px;
+					font-weight: bold;
+				}
+				#left1 img{padding:0 10px 0 11px;}
+				#left1 a:link,a:visited{
+					display:block;
+					text-decoration: none;
+					color: black;
+				}
+				#left1 a:hover{
+
+					background-color: #9fa2bc;
+				}
+				.left2 a:link,a:visited{
+					display: block;
+					text-decoration: none;
+					color: black;
+					padding: 0 0 0 13px;
+
+				}
+				.left2 a:hover{
+					background-color: #9fa2bc;
+				}
+				.left3
+				{
+					padding-top:6px;
+					margin-left:2px;
+					list-style-type: none;
+					font-size: 12px;
+				}
+				.left3 li{
+					padding: 0 0 0 13px;
+					margin: 0 5px 1px 5px;
+					line-height: 24px;
+				}
+				#content1
+				{
+					height: 125px;
+					padding: 13px 0 0 5px;
+					margin-bottom: 0px;
+					border: none;
+				}
+				#content2
+				{
+					height: 230px;
+					width: 875px;
+					border: 1px solid gray;
+				}	
+				#content21
+				{
+					padding-top:5px;
+					padding-left: 10px;
+					height: 23px;
+					border-bottom:1px solid gray; 
+					background-color: #E9EAEF;
+				}
+				#content22
+				{
+					width: 875px;
+					height: 85px;
+					border-bottom: 1px solid gray;
+				}
+				#cul{list-style-type: none;}
+				#cul li{
+					width:40%;
+					line-height: 30px;
+					padding: 3px 3px 0 25px;
+					float: left;
+				}
+				#content3{
+					width: 875px;
+					height: 30px;
+				}
+				#content3 li{
+					padding: 7px 3px;
+					list-style-type: none;
+					font-size: 13px;
+					display: inline;
+					line-height: 20px;
+				}
+				#right1{
+					height: 40px;
+					margin: 6px 6px 0 0;
+				}
+				#Right li{
+					font-size: 13px;
+					list-style-type: none;
+				}
+				#right2{
+					height: 80px;
+					width: 220px;
+					background-color: #DBDBE5;
+					padding: 4px 10px 3px 15px;
+				}
+				#right3{
+					height: 230px;
+					width: 235px;
+					border:1px solid gray;
+					margin:5px 0 0 0;
+				}
+				#right31{
+					width: 235px;
+					height: 143px;
+					border-bottom: 1px solid gray;
+				}
+				#right32{margin: 4px 4px 0 10px;}
+				#right32 p{
+					font-size: 12px;
+					display: inline;
+				}
+				#right3 ul
+				{
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					overflow:hidden;
+					background-color:#DBDBE5;
+				}
+				#right3 li
+				{
+					float:left;
+					padding: 4px 4px 0 4px;
+				}
+				#header a{
+					text-decoration: none;
+					color: #FFFFFF;
+				}
+				#header a:hover{
+					text-decoration: underline;
+				}
+				#Right a:link,a:visited
+				{
+					display:block;
+					width:99px;
+					font-size: 15px;
+					font-weight:bold;
+					text-align:center;
+					padding:4px;
+					text-decoration:none;
+					text-transform:uppercase;
+					color: black;
+				}
+				#Right a:hover,a:active{background-color:#FFFFFF; }
+				#cul a:link,a:visited{
+					text-decoration: none;
+					color: black;
+				}
+				#cul a:hover{
+					text-decoration: underline;
+				}
+				#content3 a:link,a:visited{
+					text-decoration: none;
+					color: black;
+				}
+				#content3 a:hover{
+					text-decoration: underline;
+				}
+			</style>
+		</head>
+		<body>
+			<div id="header">
+				<h1>Mail</h1>
+				<h4>QQ邮箱</h4>
+				<h6>mail.qq.com</h6>
+				<ul class="none">
+					<li><a href="#">邮箱首页</a> | </li>
+					<li><a href="#">设置</a>-</li>
+					<li><a href="#">换肤</a></li>
+				</ul>
+				<ul class="rnone">
+					<li><a href="#">反馈意见</a> |</li>
+					<li><a href="#">帮助中心</a> |</li>
+					<li><a href="#">退出</a></li>
+				</ul>
+				<form id="fm">
+					<input id="guide" type="text">
+				</form>
+			</div>
+			<div id="Left">
+				<div>
+					<ul id="left1">
+						<li><a href="#"><img src="w.gif" />写信</a></li>
+						<li><a href="#"><img src="r.gif" />收信</a></li>
+						<li><a href="#"><img src="c.gif" />通讯录</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="left2">
+						<li><a href="#">收件箱</a></li>
+						<li><a href="#">星标邮件</a></li>
+						<li><a href="#">群邮件</a></li>
+						<li><a href="#">已发送</a></li>
+					    <li><a href="#">已删除</a></li>
+						<li><a href="#">垃圾箱</a></li>
+						<li><a href="#">QQ邮件订阅</a></li>
+					</ul>
+					<ul class="left2">
+						<li><a href="#">我的文件夹</a></li>
+						<li><a href="#">其他邮箱</a></li>
+					</ul>
+					<ul class="left3">
+						<li>漂流瓶</li>
+						<li>
+							<span>贺卡  |</span>
+							<span>明信片</span>
+						</li>
+						<li>
+							<span>日历 |</span>
+							<span>记事本</span>
+						</li>
+						<li>附件收藏</li>
+						<li>文件中转站</li>
+						<li>阅读空间</li>
+					</ul>
+				</div>
+			</div>
+			<div id="Right">
+				<div id="right1">
+					<ul>
+						<li>济南</li>
+						<li>今：4℃～10℃  明：1℃～12℃</li>
+					</ul>	
+				</div>
+				<div id="right2">
+					<ul>
+						<li>置顶邮件</li>
+						<li>重要或待办邮件，你可以通过置顶将他们保持在邮件列表的顶部，方便优先查看和处理。立即体验
+						</li>
+					</ul>
+				</div>
+				<div id="right3">
+					<ul>
+						<li><a href="#生日提醒">生日提醒</a></li>
+						<li><a href="#我的信息">我的信息</a></li>
+					</ul>
+				<div id="right31"></div>
+				<div id="right32">
+					<span><img src="computer.png"></span>
+					<p>将文字传送到手机</p>
+				</div>
+				</div>
+			</div>
+			<div id="Content">
+				<div id="content1"> 下午好，。。。。</div>
+				<div id="content2">
+					<div id="content21"><p>邮箱推荐</p></div>
+					<div id="content22"><a href="#"><img src="web.jpg" width="670px" height="85px"></img></a></div>
+					<ul id="cul">
+						<li><img src="iphone.png" /><a href="#">iPhone版</a></li>
+						<li>
+							<span><img src="card.png" /><a href="#">贺卡</a>-</span>
+							<span><a href="#">明信片</a></span>
+						</li>
+						<li><img src="ipad.png" /><a href="#">iPad版</a></li>
+						<li>
+							<span><img src="note.png" /><a href="#">记事本</a>-</span>
+							<span><a href="#">日历</a></span>
+						</li>
+						<li><img src="and.png" /><a href="#">Android版</a></li>
+						<li><img src="zh.png" /><a href="#">文件中转站</a></li>
+					</ul>
+				</div>
+				<div id="content3">
+					<ul>
+						<li><a href="#">XXXX年XX月XX日</a> |</li>
+						<li><a href="#">暖灯行动</a> |</li>
+						<li><a href="#">企业邮箱</a> |</li>
+						<li><a href="#">开放平台</a> |</li>
+						<li><a href="#">手机使用邮箱</a> |</li>
+						<li><a href="#">实验室</a> |</li>
+						<li><a href="#">邮箱助手</a> |</li>
+						<li><a href="#">自助查询</a> |</li>
+						<li><a href="#">团队博客</a><a href="#"></a> |</li>
+						<li><a href="#">加入我们</a></li>
+					</ul>
+					<ul>
+						<li>
+							<span><a href="#">标准版</a>-</span>
+							<span><a href="#">基本版</a></span>
+						</li>
+						<li>© 1998 - 2014 Tencent Inc. All Rights Reserved</li>
+					</ul>
+				</div>
+			</div>			
+		</body>
+	</html>
